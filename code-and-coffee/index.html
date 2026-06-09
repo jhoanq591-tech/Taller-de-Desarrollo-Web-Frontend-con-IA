@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INFUSION | Código Descafeinado</title>
+  <meta name="description" content="Cafetería temática para programadores y amantes de la tecnología.">
+  
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <a href="#inicio" class="logo">{INFUSION}</a>
+      
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+          <li><a href="#productos" class="nav-link">Productos</a></li>
+          <li><a href="#evento" class="nav-link">Evento</a></li>
+          <li><a href="#contacto" class="nav-link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-video-wrapper">
+        <video autoplay muted loop class="hero-video" poster="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=1920&q=80">
+          </video>
+        <div class="hero-overlay"></div>
+      </div>
+      
+      <div class="container hero-content reveal">
+        <h1 class="hero-brand">INFUSION</h1>
+        <span class="hero-slogan">// Codigo descafeinado</span>
+        <p class="hero-desc">Un espacio diseñado para programadores, desarrolladores y amantes de la tecnología que buscan inspiración, productividad y una excelente taza de café.</p>
+        <div class="hero-buttons">
+          <a href="#productos" class="btn btn-primary">Explorar Menú</a>
+          <a href="#evento" class="btn btn-secondary">Conocer Evento</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="promo-banner" class="promo-banner reveal">
+      <div class="container">
+        <h2>Code Challenge Arena</h2>
+        <p>Participa en retos de programación, forma equipo, gana premios y demuestra tus habilidades.</p>
+        <a href="#evento" class="btn btn-accent">Ver detalles del evento</a>
+      </div>
+    </section>
+
+    <section id="nosotros" class="section-padding container">
+      <div class="text-center reveal">
+        <h2 class="section-title">Nuestra Filosofía</h2>
+        <span class="section-subtitle">System.out.println("Nosotros");</span>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Historia</h3>
+          <p>Infusion nació con la idea de combinar dos pasiones: el café de calidad y la programación. Nuestro objetivo es crear una comunidad donde las ideas fluyan tan rápido como el código.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Misión</h3>
+          <p>Ofrecer experiencias únicas que impulsen la creatividad, el aprendizaje y la colaboración mediante un ambiente especializado para programadores.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Visión</h3>
+          <p>Convertirnos en la cafetería tecnológica referente para desarrolladores y comunidades digitales en Latinoamérica.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Valores</h3>
+          <ul>
+            <li>Innovación</li>
+            <li>Comunidad</li>
+            <li>Aprendizaje continuo</li>
+            <li>Creatividad</li>
+            <li>Trabajo colaborativo</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="productos" class="section-padding productos">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">Menú de Desarrollo</h2>
+          <span class="section-subtitle">const menu = await fetch('/api/coffee');</span>
+        </div>
+
+        <div class="filters reveal">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="hot">Hot()</button>
+          <button class="filter-btn" data-filter="cold">Cold()</button>
+        </div>
+
+        <div class="products-grid">
+          <div class="product-card reveal product-item" data-category="hot">
+            <div class="product-img"><img src="/img/latte.jpg" alt="Latte Dev"></div>
+            <div class="product-info">
+              <h3 class="product-title">Latte Dev</h3>
+              <div class="product-price">$12.000 COP</div>
+              <p>Café latte diseñado para largas sesiones de programación.</p>
+            </div>
+          </div>
+          <div class="product-card reveal product-item" data-category="hot">
+            <div class="product-img"><img src="/img/expresso.jpg" alt="Espresso Compile"></div>
+            <div class="product-info">
+              <h3 class="product-title">Espresso Compile</h3>
+              <div class="product-price">$8.000 COP</div>
+              <p>Un espresso intenso que te ayuda a compilar ideas y mantener el enfoque.</p>
+            </div>
+          </div>
+          <div class="product-card reveal product-item" data-category="hot">
+            <div class="product-img"><img src="/img/mocha.avif" alt="Mocha Full Stack"></div>
+            <div class="product-info">
+              <h3 class="product-title">Mocha Full Stack</h3>
+              <div class="product-price">$14.000 COP</div>
+              <p>Combinación perfecta de café, chocolate y leche para desarrolladores completos.</p>
+            </div>
+          </div>
+          <div class="product-card reveal product-item" data-category="hot">
+            <div class="product-img"><img src="/img/latte.jpg" alt="Cappuccino Debug"></div>
+            <div class="product-info">
+              <h3 class="product-title">Cappuccino Debug</h3>
+              <div class="product-price">$13.000 COP</div>
+              <p>Ideal para encontrar soluciones cuando aparecen errores inesperados.</p>
+            </div>
+          </div>
+          <div class="product-card reveal product-item" data-category="cold">
+            <div class="product-img"><img src="/img/frappe.webp" alt="Frappé JavaScript"></div>
+            <div class="product-info">
+              <h3 class="product-title">Frappé JavaScript</h3>
+              <div class="product-price">$15.000 COP</div>
+              <p>Bebida fría y energética para sesiones creativas de desarrollo web.</p>
+            </div>
+          </div>
+          <div class="product-card reveal product-item" data-category="cold">
+            <div class="product-img"><img src="/img/cold brew.jpg" alt="Cold Brew Git Push"></div>
+            <div class="product-info">
+              <h3 class="product-title">Cold Brew Git Push</h3>
+              <div class="product-price">$14.500 COP</div>
+              <p>Energía constante para enviar tu próximo proyecto al repositorio.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="evento" class="section-padding evento-exclusivo">
+      <div class="container">
+        <div class="text-center reveal">
+          <h2 class="section-title">&lt;Code Challenge Arena /&gt;</h2>
+          <span class="section-subtitle">Evento mensual exclusivo</span>
+        </div>
+
+        <div class="evento-grid">
+          <div class="evento-column reveal">
+            <div class="evento-box">
+              <h3>Concepto & Objetivos</h3>
+              <p>Evento mensual o bimensual donde programadores participan en equipos para resolver retos tecnológicos y competir por premios.</p>
+              <ul>
+                <li>Crear comunidad.</li>
+                <li>Atraer nuevos clientes.</li>
+                <li>Fomentar networking.</li>
+                <li>Promover el aprendizaje colaborativo.</li>
+              </ul>
+            </div>
+            
+            <div class="evento-box" style="margin-top: 1rem;">
+              <h3>¿Cómo funciona?</h3>
+              <ol>
+                <li>Los participantes forman equipos.</li>
+                <li>Se presentan desafíos de programación.</li>
+                <li>Los equipos compiten en tiempo limitado.</li>
+                <li>Se evalúan creatividad y eficiencia.</li>
+                <li>Se entregan premios a los ganadores.</li>
+              </ol>
+            </div>
+          </div>
+
+          <div class="evento-column reveal">
+            <div class="evento-box">
+              <h3>Beneficios y Premios</h3>
+              <p>Al participar obtienes:</p>
+              <ul>
+                <li>Bebidas de cortesía y descuentos exclusivos.</li>
+                <li>Networking y reconocimiento dentro de la comunidad.</li>
+              </ul>
+              <p><strong>Premios para ganadores:</strong></p>
+              <ul>
+                <li>Gift Cards y Consumo gratis.</li>
+                <li>Kits tecnológicos y Merchandising.</li>
+              </ul>
+            </div>
+
+            <div class="evento-box" style="margin-top: 1rem;">
+              <h3>Cronograma</h3>
+              <div class="cronograma">
+                <div class="crono-item"><span class="crono-step">1</span> Registro</div>
+                <div class="crono-item"><span class="crono-step">2</span> Formación de equipos</div>
+                <div class="crono-item"><span class="crono-step">3</span> Desarrollo del reto</div>
+                <div class="crono-item"><span class="crono-step">4</span> Evaluación</div>
+                <div class="crono-item"><span class="crono-step">5</span> Premiación</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats-grid reveal" id="stats">
+          <div class="stat-item">
+            <span class="stat-number" data-target="500">0</span>
+            <span class="stat-label">Participantes</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="24">0</span>
+            <span class="stat-label">Eventos realizados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="150">0</span>
+            <span class="stat-label">Premios entregados</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-number" data-target="120">0</span>
+            <span class="stat-label">Equipos inscritos</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="contacto" class="section-padding container">
+      <div class="text-center reveal">
+        <h2 class="section-title">Abre una conexión</h2>
+        <span class="section-subtitle">fetch('/api/contact', { method: 'POST' });</span>
+      </div>
+
+      <div class="contacto-grid">
+        <div class="info-contacto reveal">
+          <div class="info-item">
+            <h4>Dirección</h4>
+            <p>Calle 123 #45-67</p>
+          </div>
+          <div class="info-item">
+            <h4>Correo</h4>
+            <p>contacto@infusion.com</p>
+          </div>
+          <div class="info-item">
+            <h4>Teléfono</h4>
+            <p>+57 300 123 4567</p>
+          </div>
+          <div class="info-item">
+            <h4>Redes</h4>
+            <div class="social-links">
+              <a href="#">IG</a>
+              <a href="#">FB</a>
+              <a href="#">IN</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="formulario-contacto reveal">
+          <div class="form-success" id="form-success">
+            ¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.
+          </div>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" class="form-control" placeholder="Tu nombre">
+              <div class="error-msg">El nombre es obligatorio y debe tener más de 2 caracteres.</div>
+            </div>
+            <div class="form-group">
+              <label for="correo">Correo Electrónico</label>
+              <input type="email" id="correo" class="form-control" placeholder="tu@correo.com">
+              <div class="error-msg">Ingresa un correo electrónico válido.</div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" class="form-control" placeholder="Escribe tu mensaje aquí..."></textarea>
+              <div class="error-msg">El mensaje no puede estar vacío (mín. 10 caracteres).</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar Petición</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="ia-usage" class="section-padding ia-section">
+      <div class="container reveal">
+        <div class="ia-card">
+          <h2 class="section-title">Integración de Inteligencia Artificial</h2>
+          <p><strong>Herramienta utilizada:</strong> Gemini AI</p>
+          <p><strong>Uso:</strong> Generación de estructura, contenido y apoyo creativo.</p>
+          <p><strong>Aporte:</strong> Optimización del proceso de diseño y desarrollo web.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <span class="footer-logo">{INFUSION}</span>
+          <p>El código compila mejor con una buena taza de café.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navegación rápida</h4>
+          <ul>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#productos">Menú</a></li>
+            <li><a href="#evento">Code Arena</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        &copy; 2026 INFUSION. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <button id="btn-top" aria-label="Volver arriba">↑</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
