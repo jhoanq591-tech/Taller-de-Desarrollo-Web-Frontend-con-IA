@@ -1,0 +1,91 @@
+/* =========================================
+   MEDIA QUERIES (Mobile First Escalado)
+   ========================================= */
+
+/* Tablet (768px y superior) */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+
+  .hero-brand {
+    font-size: 4.5rem;
+  }
+
+  .hero-buttons {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .about-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacto-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Desktop (1024px y superior) */
+@media screen and (min-width: 1024px) {
+  .container {
+    max-width: 960px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .nav-link {
+    color: var(--color-white);
+    font-size: 1rem;
+  }
+
+  .header.scrolled .nav-link {
+    color: var(--color-secondary);
+  }
+
+  .header.scrolled .nav-link:hover {
+    color: var(--color-primary);
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .evento-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Pantallas Grandes (1440px y superior) */
+@media screen and (min-width: 1440px) {
+  .container {
+    max-width: 1320px;
+  }
+  
+  .hero-brand {
+    font-size: 5.5rem;
+  }
+}
